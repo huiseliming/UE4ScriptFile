@@ -1,0 +1,1 @@
+"<AbsoluteEnginePath>\Binaries\Win64\UE4Editor.exe" "<FullPathToUprojectFile>" -game -RestX=1600 -RestY=900 -WinX=30 -WinY=30 -log -nosteam

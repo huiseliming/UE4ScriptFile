@@ -1,0 +1,1 @@
+"<AbsoluteEnginePath>Binaries\DotNET\UnrealBuildTool.exe" -projectfiles -project="<FullPathToUprojectFile>" -game -rocket -progress
