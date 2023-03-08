@@ -1,0 +1,16 @@
+sudo apt update && sudo apt upgrade
+sudo apt install git
+git clone https://github.com/DamionGans/ubuntu-wsl2-systemd-script.git
+cd ubuntu-wsl2-systemd-script/
+bash ubuntu-wsl2-systemd-script.sh
+exit
+# wsl --shutdown
+# test systemctl command
+sudo apt-mark hold acpid acpi-support
+sudo apt install -y ubuntu-desktop
+sudo apt install -y xrdp
+sudo systemctl status xrdp
+sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak
+sudo sed -i 's/3389/3390/g' /etc/xrdp/xrdp.ini
+sudo systemctl restart xrdp
+#vim /etc/xrdp/xrdp.ini
